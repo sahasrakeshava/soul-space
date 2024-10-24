@@ -7,11 +7,11 @@
   };
 </script>
 
-<nav class="bg-purple-800 p-4">
+<nav class="p-4 bg-purple-800">
   <!-- Dark purple background -->
-  <div class="container mx-auto flex justify-between items-center">
-    <h1 class="text-white text-2xl font-bold">SoulSpace</h1>
-    <button class="md:hidden text-white" on:click={toggleMenu}> ☰ </button>
+  <div class="container flex items-center justify-between mx-auto">
+    <h1 class="text-2xl font-bold text-white">Brain Chill</h1>
+    <button class="text-white md:hidden" on:click={toggleMenu}> ☰ </button>
 
     <div class="flex space-x-4 md:flex">
       <a href="/" class="text-white hover:underline">Home</a>
@@ -29,7 +29,7 @@
       <!-- Only show the mobile menu if isOpen is true -->
       <div class="md:hidden" transition:fade={{ duration: 200 }}>
         <div
-          class="flex flex-col space-y-2 mt-2 bg-purple-900 p-4 rounded-lg shadow-lg"
+          class="flex flex-col p-4 mt-2 space-y-2 bg-purple-900 rounded-lg shadow-lg"
         >
           <a href="/" class="text-white hover:underline" transition:slide
             >Home</a
